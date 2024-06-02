@@ -71,7 +71,7 @@ const HeroSection = () => {
             className="mt-3 font-sans text-xl capitalize text-white"
           >
             Saya adalah Junior Fullstack Developer berusia 18 tahun dengan
-            pengalaman lebih dari 2 tahun di industri ini. Saya sangat suka
+            pengalaman lebih dari 1 tahun di industri ini. Saya sangat suka
             berkolaborasi, inovatif, dan kreatif dalam menyelesaikan setiap
             proyek.
           </motion.p>
