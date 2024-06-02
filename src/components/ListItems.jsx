@@ -9,7 +9,7 @@ const ListItems = ({ children }) => {
 const Item = ({ children }) => {
   return (
     <>
-      <li className="rounded bg-zinc-800 p-2 text-4xl font-bold text-white">
+      <li className="flex items-center justify-center rounded bg-zinc-800 p-2 text-4xl font-bold text-white">
         {children}
       </li>
     </>

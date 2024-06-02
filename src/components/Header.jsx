@@ -7,7 +7,7 @@ const Header = () => {
       <header className="fixed left-0 top-0 z-50 w-full px-5 py-7 text-white">
         <nav className="flex w-full items-center justify-between">
           <Logo />
-          <ul className="flex items-center justify-center gap-10">
+          <ul className="flex items-center justify-center gap-3 lg:gap-10">
             <li>
               <NavLink href="#about">About</NavLink>
             </li>

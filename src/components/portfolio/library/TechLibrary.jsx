@@ -1,9 +1,10 @@
-import { BiLogoTailwindCss } from "react-icons/bi";
 import livewire from "../../../assets/images/livewire.png";
 import { FaPhp } from "react-icons/fa6";
 import logoLaravel from "../../../assets/images/1969px-Laravel.svg.png";
 import { Tooltip } from "@chakra-ui/react";
 import { Item } from "../../ListItems";
+import logoTailwind from "../../../assets/images/Tailwind_CSS_Logo.svg.png";
+
 const TechLibrary = () => {
   return (
     <>
@@ -27,9 +28,11 @@ const TechLibrary = () => {
       </Item>
       <Item>
         <Tooltip label="Tailwind" aria-label="Tailwind" placement="top">
-          <span>
-            <BiLogoTailwindCss className="transition duration-300 ease-in-out hover:text-sky-500" />
-          </span>
+          <img
+            src={logoTailwind}
+            className="w-12 saturate-0 transition duration-300 ease-in-out hover:saturate-100"
+            alt=""
+          />
         </Tooltip>
       </Item>
       <Item>

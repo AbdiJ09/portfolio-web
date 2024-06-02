@@ -16,11 +16,11 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
           viewport={{ once: true }}
-          className="mb-10 me-5 text-end text-6xl font-bold"
+          className="mb-10 me-5 text-end text-5xl font-bold lg:text-6xl"
         >
           ABOUT
         </motion.h1>
-        <div className="flex items-start gap-10">
+        <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start">
           <motion.picture
             className="bg-img"
             ref={ref}
@@ -42,7 +42,7 @@ const About = () => {
               alt=""
             />
           </motion.picture>
-          <div className="w-4/5 space-y-20 text-left">
+          <div className="w-full space-y-20 p-3 text-left lg:w-4/5">
             <Section>
               <H1>Personal</H1>
               <Paragraph>
@@ -69,12 +69,12 @@ const About = () => {
               </Paragraph>
             </Section>
             <Section>
-              <div className="flex  gap-10">
+              <div className="flex gap-10">
                 <div className="">
                   <H1>Sosial Media</H1>
                   <ul className="mt-2 flex flex-wrap items-center gap-5">
                     <li className="flex items-center gap-1">
-                      <FaGithub className=" text-3xl" />
+                      <FaGithub className="text-3xl " />
                       <a
                         href="https://github.com/AbdiJ09"
                         target="_blank"
@@ -120,7 +120,7 @@ const About = () => {
   function Paragraph({ children, style = "" }) {
     return (
       <p
-        className={`text-left text-lg  font-light uppercase text-white ${style}`}
+        className={`text-md text-left font-light  uppercase text-white lg:text-lg ${style}`}
       >
         {children}
       </p>
@@ -128,7 +128,7 @@ const About = () => {
   }
   function H1({ children }) {
     return (
-      <h1 className="w-fit text-center text-4xl font-bold uppercase">
+      <h1 className="w-fit text-center text-2xl font-bold uppercase lg:text-4xl">
         {children}
       </h1>
     );

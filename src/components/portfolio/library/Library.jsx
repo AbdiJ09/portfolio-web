@@ -10,7 +10,9 @@ const Library = () => {
         <Image src={library} />
       </CardImage>
       <CardHeader>
-        <h3 className="text-2xl font-bold text-white">Perpuustakan Sekolah</h3>
+        <h3 className="text-xl font-bold text-white lg:text-2xl">
+          Perpuustakan Sekolah
+        </h3>
         <a
           href="https://tamansiswa-jkt.org/perpustakaan/"
           target="_blank"
@@ -22,7 +24,7 @@ const Library = () => {
         </a>
       </CardHeader>
       <CardBody>
-        <p className="text-lg font-light text-white">
+        <p className="text-md font-light text-white lg:text-lg">
           Aplikasi Perpustakaan Sekolah ini dikembangkan menggunakan PHP,
           Laravel, Tailwind, Livewire, dan beserta Ekosistem dari Laravel
         </p>

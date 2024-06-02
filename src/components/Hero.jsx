@@ -29,19 +29,15 @@ const HeroSection = () => {
   const heroTitle = ["FULL", "STACK", "DEVELOPER"];
   return (
     <>
-      <section className="mt-3 flex min-h-screen w-full items-center justify-center gap-10 overflow-hidden px-4">
-        <div
-          className="
-          w-full
-        "
-        >
+      <section className="mt-20 flex min-h-screen w-full flex-col items-center justify-center gap-10 overflow-hidden px-4 lg:mt-3 lg:flex-row">
+        <div className="w-full ">
           <motion.h5
             initial="hidden"
             variants={variants}
             animate="visible"
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.25 }}
             id="myName"
-            className="text-6xl tracking-wide text-white"
+            className="text-2xl tracking-wide text-white lg:text-6xl"
           >
             Hallo, Saya AJ
           </motion.h5>
@@ -56,7 +52,7 @@ const HeroSection = () => {
                     y: 75,
                   },
                 }}
-                className="title relative text-[8rem] font-extrabold uppercase leading-[8rem] tracking-wide text-white"
+                className="title relative text-5xl font-extrabold uppercase leading-[4rem] tracking-wide text-white lg:text-[8rem] lg:leading-[8rem]"
               >
                 {title}
               </motion.h1>
@@ -68,7 +64,7 @@ const HeroSection = () => {
             variants={variants}
             animate="visible"
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.25 }}
-            className="mt-3 font-sans text-xl capitalize text-white"
+            className="mt-3 font-sans text-sm capitalize text-white lg:text-xl"
           >
             Saya adalah Junior Fullstack Developer berusia 18 tahun dengan
             pengalaman lebih dari 1 tahun di industri ini. Saya sangat suka
@@ -90,11 +86,7 @@ const HeroSection = () => {
           }}
           animate="visible"
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0.25 }}
-          className="
-          img-aj
-          bg-img relative h-96 w-full rotate-6 overflow-hidden rounded-3xl p-3
-
-        "
+          className="img-aj bg-img relative h-full w-full rotate-6 overflow-hidden rounded-3xl p-3 lg:h-96"
         >
           <img
             src={AJ}

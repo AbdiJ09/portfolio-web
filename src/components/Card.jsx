@@ -1,7 +1,7 @@
 const CardImage = ({ children }) => {
   return (
     <>
-      <div className="h-80">{children}</div>
+      <div className="h-52 lg:h-80">{children}</div>
     </>
   );
 };
